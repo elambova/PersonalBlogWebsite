@@ -1,0 +1,167 @@
+@media (min-width: 901px) {
+  html {
+    font-size: 20px;
+  }
+
+  .container.home-page {
+    width: 70%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      "header header"
+      "main main"
+      "footer footer";
+    grid-gap: 20px;
+  }
+
+  .container.post-page {
+    width: 70%;
+    grid-template-columns: 1fr 320px;
+    grid-template-rows: 140px 1fr 100px;
+    grid-template-areas:
+      "header header "
+      "mainpost sidebar"
+      "footer footer";
+    grid-gap: 20px;
+  }
+
+  #menu {
+    flex-direction: row;
+  }
+
+  #menu h1 {
+    font-size: 45px;
+  }
+
+  #nested-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .card figure a {
+    width: 100%;
+  }
+
+  h3.name-author {
+    font-size: 30px;
+  }
+
+  .image-post {
+    height: 300px;
+  }
+
+  figcaption.info-post {
+    height: 100px;
+  }
+
+  .container.post-page .content {
+    grid-column: 1/2;
+  }
+
+  .body-post {
+    line-height: 35px;
+  }
+
+  .sidebar {
+    grid-column: 2/3;
+  }
+
+  .social-media i {
+    margin: 10px 20px;
+  }
+
+  .body-post ul,
+  .body-post ol {
+    margin-left: 70px;
+  }
+
+  .sidebar {
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 900px) {
+  html,
+  .date-post {
+    font-size: 14px;
+  }
+
+  .container.home-page {
+    grid-template-columns: 1fr;
+    grid-template-rows: 140px 1fr 100px;
+    width: 95%;
+    grid-template-areas:
+      "header"
+      "main"
+      "footer";
+  }
+
+  .container.post-page {
+    width: 95%;
+    grid-template-rows: 140px 400px 1fr 100px;
+    grid-template-areas:
+      "header"
+      "sidebar"
+      "mainpost"
+      "footer";
+  }
+
+  #menu {
+    flex-direction: column;
+  }
+
+  #menu li {
+    margin-bottom: 20px;
+  }
+
+  #menu h1 {
+    font-size: 30px;
+  }
+
+  #nested-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .card h2 {
+    font-size: 25px;
+  }
+
+  .card figure a {
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  .image-post {
+    height: 50%;
+  }
+
+  .social-media i {
+    margin: 0 20px 10px;
+  }
+
+  .post-article .image-post {
+    width: 50%;
+    display: block;
+    margin: 10px auto;
+  }
+
+  .info-post {
+    height: 40px;
+  }
+}
+@media (max-width: 320px) {
+  #form-subscribe input {
+    width: 90%;
+    margin-bottom: 5px;
+  }
+
+  .card {
+    padding: 10px;
+  }
+
+  .card h2 {
+    max-height: 50px;
+  }
+
+  .footer {
+    flex-direction: column;
+  }
+}
